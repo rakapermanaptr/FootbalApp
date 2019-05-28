@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/add_to_favorite"
+        android:icon="@drawable/ic_add_to_favorites"
+        android:title="@string/favorites"
+        android:iconifiedByDefault="false"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/add_to_alarm"
+        android:icon="@drawable/ic_notifications_none_black_24dp"
+        android:title="@string/alarm"
+        android:iconifiedByDefault="false"
+        app:showAsAction="ifRoom" />
+</menu>

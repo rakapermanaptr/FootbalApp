@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:orientation="vertical"
+    tools:context=".teams.players.playerdetail.PlayerActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp">
+
+        <ImageView
+            android:id="@+id/imgProfilePlayer"
+            android:layout_width="130dp"
+            android:layout_height="165dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="16dp"
+            android:scaleType="centerCrop"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="16dp"
+            tools:src="@drawable/artur" />
+
+        <TextView
+            android:id="@+id/tvPlayerName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_toRightOf="@id/imgProfilePlayer"
+            android:textColor="@color/colorWhite"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            tools:text="Arthur Melo" />
+
+        <TextView
+            android:id="@+id/tvPlayerTeam"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvPlayerName"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_toRightOf="@id/imgProfilePlayer"
+            android:textColor="@color/colorWhite"
+            android:textSize="14sp"
+            tools:text="Barcelona" />
+
+        <TextView
+            android:id="@+id/tvPlayerCountry"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvPlayerTeam"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_toRightOf="@id/imgProfilePlayer"
+            android:textColor="@color/colorWhite"
+            android:textSize="14sp"
+            tools:text="Brazil" />
+
+        <TextView
+            android:id="@+id/tvPlayerPosistion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvPlayerCountry"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_toRightOf="@id/imgProfilePlayer"
+            android:textColor="@color/colorWhite"
+            android:textSize="14sp"
+            tools:text="Midfielder" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/tvPlayerCountry"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_toRightOf="@id/tvPlayerPosistion"
+            android:gravity="right">
+
+            <TextView
+                android:id="@+id/tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Weight (kg) = "
+                android:textColor="@color/colorWhite"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/tvPlayerWeight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorWhite"
+                android:textSize="14sp"
+                tools:text="67.89" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tvPlayerDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvPlayerPosistion"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="26dp"
+            android:layout_toRightOf="@id/imgProfilePlayer"
+            android:textColor="@color/colorWhite"
+            android:textSize="14sp"
+            tools:text="1989-06-24" />
+
+        <TextView
+            android:id="@+id/tvPlayerFrom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvPlayerDate"
+            android:layout_marginLeft="16dp"
+            android:layout_toRightOf="@id/imgProfilePlayer"
+            android:textColor="@color/colorWhite"
+            android:textSize="14sp"
+            android:gravity="bottom"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="16dp"
+            tools:text="Rosario, Argentina" />
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/tvPlayerDesc"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textColor="@color/colorWhite"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

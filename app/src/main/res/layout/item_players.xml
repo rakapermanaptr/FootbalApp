@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tool="http://schemas.android.com/tools"
+    android:layout_width="90dp"
+    android:background="@drawable/border_layout"
+    android:layout_height="140dp"
+    android:layout_margin="16dp"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/imgThumbPlayer"
+        android:layout_width="match_parent"
+        android:layout_height="95dp"
+        android:scaleType="centerCrop"
+        tool:src="@drawable/artur" />
+
+    <TextView
+        android:id="@+id/tvPlayerName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:gravity="center_horizontal"
+        android:textColor="@color/colorWhite"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        tool:text="Arthur Melo" />
+
+    <TextView
+        android:id="@+id/tvPosition"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dp"
+        android:gravity="center_horizontal"
+        android:textSize="12sp"
+        android:textColor="@color/colorWhite"
+        tool:text="MidFielder" />
+
+</LinearLayout>
